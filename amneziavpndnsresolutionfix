@@ -1,0 +1,11 @@
+#!/bin/sh
+
+echo "First, install the \"systemd-resolvconf\" package."
+echo 
+sudo pacman -S systemd-resolvconf
+echo 
+echo "Now turn on the \"systemd-resolved\" service."
+echo
+systemctl enable systemd-resolved
+echo 
+echo "The execution is completed. Now you need to restart your computer."
